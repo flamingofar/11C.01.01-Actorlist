@@ -1,0 +1,39 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="da">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="style.css" />
+		<title>Actorlist</title>
+	</head>
+	<body>
+		<header>
+			<h1>Actorlist</h1>
+		</header>
+		<main>
+			<section>
+				<ul class="actorlist"></ul>
+			</section>
+
+			<!-- Movie Modal -->
+			<div class="modal_container hide">
+				<div class="backdrop"></div>
+				<div class="modal_content">
+					<h2 class="actor">Malte skjoldager</h2>
+					<p class="movie">Kill Bill</p>
+				</div>
+			</div>
+		</main>
+		<template>
+			<li>
+				<h2 class="actor"></h2>
+				<p class="movie"></p>
+			</li>
+		</template>
+		<script src="./index.js"></script>
+	</body>
+</html>
