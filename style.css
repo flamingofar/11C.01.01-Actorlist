@@ -31,11 +31,19 @@ section ul {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
-li {
+li,
+button {
 	margin: 0.8rem 0.2rem;
 	border: 2px solid black;
 	padding: 1em;
 	cursor: pointer;
+	background: transparent;
+}
+button {
+	transition: background 0.25s;
+}
+button:hover {
+	background: violet;
 }
 
 /* Movie Modal */
